@@ -137,8 +137,9 @@ public class PassthroughFS extends FuseStubFS {
     }
 
     public static void main(String[] args) {
+        System.out.println("Note that you probably need to run this with -Dfile.encoding=UTF-8 told to java!");
         if (args.length != 2) {
-//            System.err.println("Usage: java PassthroughFS <mountpoint> <root>");
+//            System.err.println("Usage: java -Dfile.encoding=UTF-8 -jar PassthroughFS.jar <mountpoint> <root>");
 //            System.exit(-1);
 
             //DUMMY
